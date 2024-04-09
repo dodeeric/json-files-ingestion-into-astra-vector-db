@@ -20,3 +20,5 @@ Run these two commands:
 pip install -r requirements.txt
 
 python app.py
+
+Remark: if the collection does not exist, it will be created.

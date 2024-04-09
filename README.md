@@ -21,4 +21,8 @@ pip install -r requirements.txt
 
 python app.py
 
-Remark: if the collection does not exist, it will be created.
+Remarks: 
+
+- If the collection does not exist, it will be created.
+- Go to https://astra.datastax.com to display the collection (json items and vectors)
+

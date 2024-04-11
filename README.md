@@ -25,5 +25,5 @@ Remarks:
 
 - If the collection does not exist, it will be created.
 - Go to https://astra.datastax.com to display the collection (json items and vectors).
-- The `JSONLoader` class from the `langchain_community.document_loaders` library is designed to load data from JSON files into Document objects. This is particularly useful in contexts where structured JSON data needs to be transformed into a format that's more conducive to processing or analysis, typically in natural language processing (NLP) or data retrieval applications.
+- The `JSONLoader` class from the `langchain_community.document_loaders` library is designed to load data from JSON files into LangChain Document objects. This is particularly useful in contexts where structured JSON data needs to be transformed into a format that's more conducive to processing or analysis, typically in natural language processing (NLP) or data retrieval applications.
 

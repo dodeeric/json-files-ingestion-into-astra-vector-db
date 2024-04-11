@@ -11,13 +11,13 @@ ASTRA_DB_APPLICATION_TOKEN = os.environ.get("ASTRA_DB_APPLICATION_TOKEN")
 ASTRA_DB_API_ENDPOINT = os.environ.get("ASTRA_DB_API_ENDPOINT")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 
-file_path = "/dir/file.json"
-collection_name = "collection"
+file_path = "commons-ds1-wps-202404052059.json"
+collection_name = "bmae_json"
 
 loader = JSONLoader(file_path=file_path, jq_schema=".[]", text_content=False)
 documents = loader.load()
 
-embeddings = OpenAIEmbeddings()
+embeddings = OpenAIEmbeddings("text-embedding-3-large")
 
 astravstore = AstraDBVectorStore(
     embedding=embeddings,

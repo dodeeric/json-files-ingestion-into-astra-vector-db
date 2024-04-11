@@ -17,7 +17,7 @@ collection_name = "bmae_json2"
 loader = JSONLoader(file_path=file_path, jq_schema=".[]", text_content=False)
 documents = loader.load()
 
-embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
+embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 
 astravstore = AstraDBVectorStore(
     embedding=embeddings,
